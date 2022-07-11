@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Clinic | Heart Disease</title>
+    <link rel="stylesheet" href="multidis.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="symbol" src="D:/HTML projects/Apna Clinic/symbol.png" alt="" >
+        <img class="name" src="D:/HTML%20projects/Apna%20Clinic/logo_dark.png" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="contact us.html">Contact us</a></li>
+            <li class="profile"><a href=""><img src="D:/HTML%20projects/Apna Clinic/profile.jpg" alt=""></a></li>
+        </ul>
+    </nav>
+    <div class="image">
+        <img src="D:/HTML%20projects/Apna%20Clinic/nurse_note.webp" alt="">
+    </div>
+    <div class="main">
+        <h1>Heart Disease</h1>
+        <p>Please provide correct information for the following parameters below to help us check your health condition:</p>
+        <form action="backend2.php">
+            <p>Age: <input type="number" placeholder="in years" min="1" max="99"></p>
+            <p>Gender: <input type="radio" name="gender">
+            <label for="1">Male</label> &nbsp;
+            <input type="radio" name="gender"><label for="0">Female</label>&nbsp;
+            <input type="radio" name="gender"><label for="2">Prefer Not to say</label>  </p>
+            <p>Chest Pain Type: <input type="radio" name="cp"><label for="0">Asymptomatic</label>&nbsp;
+                <input type="radio" name="cp"><label for="1">Atypical</label>&nbsp;
+                <input type="radio" name="cp"><label for="2">Non-anginal</label>&nbsp;
+                <input type="radio" name="cp"><label for="3">Typical</label>&nbsp;</p>
+            <p>Systolic Blood pressure: <input type="number" placeholder="in mm of Hg"></p>
+            <p>Cholesterol: <input type="number" placeholder="in mg/dL"></p>
+            <p>Fasting Glucose: <input type="number" placeholder="in mg/dL"></p>
+            <p>Resting ECG: <input type="radio" name="ecg"><label for="0">Irregular</label>&nbsp;
+            <input type="radio" name="ecg"><label for="1">Regular</label></p>
+            <p>Maximum Heart rate: <input type="number"  placeholder="in beats/min"></p>
+            <p>Exercise Induced angina: <input type="radio" name="exang"><label for="1">Yes</label>&nbsp;
+                <input type="radio" name="exang"><label for="0">No</label></p>
+            <p>ST depression: <input type="number" placeholder="Enter value of lowest point in ST"></p>
+            <p>Slope: <input type="radio" name="st">
+                <label for="0">Downsloping</label> &nbsp;
+                <input type="radio" name="st"><label for="1">Horizontal</label>&nbsp;
+                <input type="radio" name="st"><label for="2">Upsloping</label></p>
+            <p>Number of major vessels: <input type="number" min="0" max="4"></p>
+            <p>Blood flow: 
+                <input type="radio" name="thal"><label for="1">No flow</label>&nbsp;
+                <input type="radio" name="thal"><label for="2">Normal</label>
+                <input type="radio" name="thal"><label for="2">Abnormal</label></p>
+            <button type="submit">Check</button>
+        </form>
+</body>
+</html>

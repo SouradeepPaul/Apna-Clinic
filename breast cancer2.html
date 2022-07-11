@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Clinic | Breast Cancer</title>
+    <link rel="stylesheet" href="breast cancer2.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="symbol" src="D:/HTML projects/Apna Clinic/symbol.png" alt="" >
+        <img class="name" src="D:/HTML%20projects/Apna%20Clinic/logo_dark.png" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="contact us.html">Contact us</a></li>
+            <li class="profile"><a href=""><img src="D:/HTML%20projects/Apna Clinic/profile.jpg" alt=""></a></li>
+        </ul>
+    </nav>
+    <div class="image">
+        <img src="D:/HTML%20projects/Apna%20Clinic/nurse_note.webp" alt="">
+    </div>
+    <div class="main">
+        <h1>Breast Cancer</h1>
+        <p>Please fill up the table provided below with the necessary correct information:</p>
+        <form action="backend.php">
+            <table>
+                <tr>
+                    <th>Criteria</th><th>Mean value</th><th>Standard error</th><th>Worst value</th>
+                </tr>
+                <tr>
+                    <td>Radius</td>
+                    <td><input type="number" placeholder="in um"></td>
+                    <td><input type="number" placeholder="in um"></td>
+                    <td><input type="number" placeholder="in um"></td>
+                </tr>
+                <tr>
+                    <td>Standard Deviation</td>
+                    <td><input type="number"></td>
+                    <td class="inc">--</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Perimeter</td>
+                    <td><input type="number" placeholder="in um"></td>
+                    <td><input type="number" placeholder="in um"></td>
+                    <td><input type="number" placeholder="in um"></td>
+                </tr>
+                <tr>
+                    <td>Area</td>
+                    <td><input type="number" placeholder="in um2"></td>
+                    <td><input type="number" placeholder="in um2"></td>
+                    <td><input type="number" placeholder="in um2"></td>
+                </tr>
+                <tr>
+                    <td>Smoothness</td>
+                    <td><input type="number" placeholder="in um" min="0" max="1"></td>
+                    <td class="inc">--</td>
+                    <td><input type="number" placeholder="in um" min="0" max="1"></td>
+                </tr>
+                <tr>
+                    <td>Concave Severity</td>
+                    <td><input type="number" min="0" max="1"></td>
+                    <td><input type="number" min="0" max="1"></td>
+                    <td><input type="number" min="0" max="1"></td>
+                </tr>
+                <tr>
+                    <td>Concave Points</td>
+                    <td><input type="number" min="0" max="1"></td>
+                    <td><input type="number" min="0" max="1"></td>
+                    <td><input type="number" min="0" max="1"></td>
+                </tr>
+                <tr>
+                    <td>Symmetry</td>
+                    <td><input type="number" min="0" max="1"></td>
+                    <td class="inc">--</td>
+                    <td><input type="number" min="0" max="1"></td>
+                </tr>
+                <tr>
+                    <td>Fractal dimension</td>
+                    <td class="inc">--</td>
+                    <td><input type="number" min="0" max="1"></td>
+                    <td><input type="number" min="0" max="1"></td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Check</button>
+        </form>
+    </div>
+</body>
+</html>

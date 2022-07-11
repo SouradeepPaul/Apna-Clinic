@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Clinic | Kidney Diseases</title>
+    <link rel="stylesheet" href="multidis.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="symbol" src="D:/HTML projects/Apna Clinic/symbol.png" alt="" >
+        <img class="name" src="D:/HTML%20projects/Apna%20Clinic/logo_dark.png" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="contact us.html">Contact us</a></li>
+            <li class="profile"><a href=""><img src="D:/HTML%20projects/Apna Clinic/profile.jpg" alt=""></a></li>
+        </ul>
+    </nav>
+    <div class="image">
+        <img src="D:/HTML%20projects/Apna%20Clinic/nurse_note.webp" alt="">
+    </div>
+    <div class="main">
+        <h1>Chronic Kidney Disease</h1>
+        <p>Please provide correct information for the following parameters below to help us check your health condition:</p>
+        <form action="backend2.php">
+            <p>Age: <input type="number"  placeholder="in years" min="1" max="99"></p>
+            <p>Diastolic Blood Pressure: <input type="number" placeholder="in mm of Hg"></p>
+            <p>Specific Gravity: <input type="radio" name="sg"><label for="1.005">1.005</label>&nbsp;
+                <input type="radio" name="sg"><label for="1.01">1.01</label>&nbsp;
+                <input type="radio" name="sg"><label for="1.015">1.015</label>&nbsp;
+                <input type="radio" name="sg"><label for="1.02">1.02</label>&nbsp;
+                <input type="radio" name="sg"><label for="1.025">1.025</label></p>
+            <p>Albumin Level: <input type="number" placeholder="Albumin ratio in blood" min="0" max="4"> &nbsp;Sugar Level: <input type="number" placeholder="Sugar ratio in blood" min="0" max="5"></p>
+            <p>Red Blood Cells: <input type="radio" name="rbc"><label for="normal">Normal</label>&nbsp;
+                <input type="radio" name="rbc"><label for="abnormal">Abnormal</label></p>
+            <p>Pus Cell: <input type="radio" name="pc"><label for="normal">Normal</label>&nbsp;
+                <input type="radio" name="pc"><label for="abnormal">Abnormal</label></p>
+            <p>Pus Cell Clumps: <input type="radio" name="pcc"><label for="present">Present</label>&nbsp;
+                <input type="radio" name="pcc"><label for="notpresent">Not Present</label></p>
+            <p>Bacteria: <input type="radio" name="ba"><label for="present">Present</label>&nbsp;
+                <input type="radio" name="ba"><label for="notpresent">Not Present</label></p>
+            <p>Blood Glucose: <input type="number" placeholder="in mg/dL"></p>
+            <p>Urea: <input type="number" placeholder="in mg/dL"> &nbsp;Creatinine: <input type="number" placeholder="in mg/dL"></p>
+            <p>Sodium: <input type="number" placeholder="in mEq/dL"> &nbsp;Potassium: <input type="number" placeholder="in mEq/dL"></p>
+            <p>Haemoglobin: <input type="number" placeholder="in g"></p>
+            <p>Packed cell Volume: <input type="number" placeholder="in mg/dL"></p>
+            <p>WBC count: <input type="number" placeholder="in 1000 per mm3" min="0" max="20">&nbsp;
+                RBC count: <input type="number" placeholder="in millions per mm3" min="0" max="10"></p>
+            <button type="submit" onclick="kcheck2()">Check & Next</button>
+        </form>
+</body>
+<script>
+    function kcheck2(){
+        window.location.href="kidney diseases3.html";
+    }
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Clinic | Diabetes</title>
+    <link rel="stylesheet" href="multidis.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="symbol" src="D:/HTML projects/Apna Clinic/symbol.png" alt="" >
+        <img class="name" src="D:/HTML%20projects/Apna%20Clinic/logo_dark.png" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="contact us.html">Contact us</a></li>
+            <li class="profile"><a href=""><img src="D:/HTML%20projects/Apna Clinic/profile.jpg" alt=""></a></li>
+        </ul>
+    </nav>
+    <div class="image">
+        <img src="D:/HTML%20projects/Apna%20Clinic/nurse_note.webp" alt="">
+    </div>
+    <div class="main">
+        <h1>Diabetes</h1>
+        <p>Please provide correct information for the following parameters below to help us check your health condition:</p>
+        <form action="backend2.php">
+            <p>Pregnancies: <input type="number" placeholder="Enter no of pregnancies, if any"></p>
+            <p>Glucose: <input type="number" placeholder="Fasting glucose in mg/dL"></p>
+            <p>Diastolic Blood Pressure: <input type="number" placeholder="in mm of Hg"></p>
+            <p>Skin Thickness: <input type="number" placeholder="in mm"></p>
+            <p>Insulin Level: <input type="number" placeholder="in IU/mL"></p>
+            <p>Body Mass Index: <input type="number" placeholder="inKg/sq. m"></p>
+            <p>Diabetes Pedigree Function: <input type="number"></p>
+            <p>Age: <input type="number"  placeholder="in years" min="1" max="99"></p>
+            <button type="submit">Check</button>
+        </form>
+</body>
+</html>
